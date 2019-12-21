@@ -3,21 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package classesay;
+package hihello;
 
 /**
  *
- * @author perri.christian
+ * @author alessio.vampo
  */
-class Say extends Thread{
-    String parola;
-
-    public Say(String parola) {
-        this.parola = parola;
+public class Say extends Thread{
+    String cosaDire;
+    public Say (String cosaDire) {
+        this.cosaDire=cosaDire;
     }
     public void run(){
-        for(int i=0;i<10;i++){
-            System.out.println(parola);
+        for (int i = 0; i < 10; i++) {
+            System.out.println(cosaDire);
         }
-    }    
+    }
 }
