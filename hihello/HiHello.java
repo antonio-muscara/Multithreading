@@ -3,22 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package provathread;
+package hihello;
 
 /**
  *
  * @author vampo.alessio
  */
-public class ProvaThread {
+public class HiHello {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Hi saluto = new Hi();
-        Hello saluto2 = new Hello();
-        saluto2.start();
-        saluto.start();
+        Say hi = new Say("Hi");
+        Say hello = new Say("Hello");
+        hi.start();
+        hello.start();
     }
-
+    
 }
