@@ -15,8 +15,9 @@ public class HiHello {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Say hi = new Say("Hi");
-        Say hello = new Say("Hello");
+        hi = new hi("Hi");
+        hello = new Hello("Hello");
+        ciao = new ciao ("ciao");
         hi.start();
         hello.start();
     }
