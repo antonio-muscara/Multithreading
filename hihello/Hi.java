@@ -5,27 +5,14 @@
  */
 package hihello;
 
-import java.lang.Thread;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-
 /**
  *
- * @author vampo.alessio
+ * @author perilli.alberto
  */
-public class Hi extends Thread{
-    @Override
-    public void run() {
+public class Hi extends Thread {
+    public void run(){
         for (int i = 0; i < 10; i++) {
-            
             System.out.println("Hi");
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException ex) {
-                Logger.getLogger(Hi.class.getName()).log(Level.SEVERE, null, ex);
-            }
         }
-    }
-    
+   }
 }
