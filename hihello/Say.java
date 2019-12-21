@@ -10,13 +10,13 @@ package hihello;
  * @author alessio.vampo
  */
 public class Say extends Thread{
-    String cosaDire;
-    public Say (String cosaDire) {
-        this.cosaDire=cosaDire;
+    String ciao;
+    public Say (String ciao) {
+        this.ciao=ciao;
     }
     public void run(){
         for (int i = 0; i < 10; i++) {
-            System.out.println(cosaDire);
+            System.out.println(Ciao);
             try{
                 Thread.sleep(1000);
             }catch(Exception E){
